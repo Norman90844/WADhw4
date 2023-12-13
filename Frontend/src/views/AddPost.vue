@@ -28,11 +28,6 @@ export default {
           credentials: 'include', //  Don't forget to specify this if you need cookies
           body: JSON.stringify(data),
         }).then((response) => response.json())
-            .then((data) => {
-              console.log(data);
-              //this.$router.push("/");
-              location.assign("/");
-            })
             .catch((e) => {
               console.log(e);
               console.log("error");
