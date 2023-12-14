@@ -4,6 +4,8 @@ import SignUp from "../views/SignUp.vue";
 import LogIn from "../views/LogIn.vue";
 import auth from "../auth";
 import AddPost from "@/views/AddPost.vue";
+import APost from "../views/APost.vue";
+
 
 
 
@@ -12,6 +14,19 @@ const routes = [{
         path: "/",
         name: "home",
         component: HomeView,
+        beforeEnter: async(to, from, next) => {
+            let authResult = await auth.authenticated();
+            if (!authResult) {
+                next('/login')
+            } else {
+                next();
+            }
+        }
+    },
+    {
+        path: "/posts/:id",
+        name: "APost",
+        component: APost,
         beforeEnter: async(to, from, next) => {
             let authResult = await auth.authenticated();
             if (!authResult) {
@@ -56,7 +71,7 @@ const routes = [{
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHashHistory(process.env.BASE_URL),
     routes,
 });
 

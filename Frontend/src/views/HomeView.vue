@@ -7,12 +7,13 @@
         <div class="container">
           <button v-if = "authResult" @click="Logout" class="center">Logout</button>
         </div>
-        <div class="post-list" v-for="post in posts"   :key="post.index">
-          <div class="post">
-            <h3> {{post.date}} </h3>
-            <p> {{post.body}} </p>
-          </div>
+        <div class="post-list" v-for="post in posts" :key="post.id">
+          <router-link :to="'/posts/' + post.id" class="post">
+            <h3>{{ post.date }}</h3>
+            <p>{{ post.body }}</p>
+          </router-link>
         </div>
+
       </div>
       <div class="sidebar">
       </div>
@@ -154,6 +155,12 @@ nav{
     padding: 10px;
     margin: 10px auto;
     text-align: left;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 .center {
   margin: auto;
