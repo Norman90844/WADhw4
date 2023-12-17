@@ -71,7 +71,7 @@ export default {
 #form {
   max-width: 420px;
   margin: 30px auto;
-  background: rgb(167, 154, 154);
+  background: rgb(189, 212, 199);
   text-align: left;
   padding: 40px;
   border-radius: 10px;
