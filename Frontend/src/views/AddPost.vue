@@ -47,8 +47,6 @@ export default {
   text-align: left;
   padding: 40px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
 }
 h3 {
   text-align: center;
@@ -65,7 +63,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 input {
@@ -76,6 +74,7 @@ input {
   border-bottom: 1px solid white;
   color: black;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 button {
   background: rgb(8, 110, 110);

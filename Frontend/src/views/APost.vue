@@ -1,13 +1,13 @@
 <template>
-  <div class="A Post">
+  <div class="APost">
     <div id="form">
       <h3>A Post</h3>
-      <label for="body">Body: </label>
+      <label for="body">Body </label>
       <input name="body" type="text" id="body" required v-model="post.body" />
-    </div>
-    <div class="container">
-      <button @click="updatePost" class="updatePost">Update Post</button>
-      <button @click="deletePost" class="deletePost">Delete Post</button>
+      <div class="container">
+        <button @click="updatePost" class="updatePost">Update</button>
+        <button @click="deletePost" class="deletePost">Delete</button>
+      </div>
     </div>
   </div>
 </template>
@@ -110,8 +110,9 @@ button {
 .container {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .updatePost {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 </style>
