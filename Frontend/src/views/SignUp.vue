@@ -11,7 +11,7 @@
 
 <script>
 export default {
-name: "SignUp", 
+name: "SignUp",
 
 data: function() {
     return {
@@ -47,7 +47,7 @@ SignUp() {
         console.log("error");
       });
     },
-  }, 
+  },
   }
 </script>
 
@@ -62,10 +62,10 @@ SignUp() {
 }
 h3 {
   text-align: center;
-  color: rgb(8, 110, 110);
+  color: black;
 }
 label {
-  color: rgb(8, 110, 110);
+  color: black;
   display: inline-block;
   margin: 25px 0 15px;
   font-size: 0.8em;
@@ -80,7 +80,8 @@ input {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid white;
-  color: blue;
+  color: black;
+  border-radius: 10px;
 }
 button {
   background: rgb(8, 110, 110);
@@ -91,5 +92,14 @@ button {
   border-radius: 20px;
   align-items: center;
   text-align: center;
+}
+.SignUp{
+  display: block;
+  margin: 20px auto;
+  background: rgb(8, 110, 110);
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
 }
 </style>

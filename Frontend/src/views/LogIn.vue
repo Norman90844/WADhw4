@@ -66,10 +66,10 @@ LogIn() {
 }
 h3 {
   text-align: center;
-  color: rgb(8, 110, 110);
+  color: black;
 }
 label {
-  color: rgb(8, 110, 110);
+  color: black;
   display: inline-block;
   margin: 25px 0 15px;
   font-size: 0.8em;
@@ -84,7 +84,8 @@ input {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid white;
-  color: blue;
+  color: black;
+  border-radius: 10px;
 }
 button {
   background: rgb(8, 110, 110);
