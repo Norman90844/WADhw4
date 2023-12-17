@@ -5,23 +5,22 @@
       </div>
       <div class="posts">
         <div class="container">
-          <button v-if = "authResult" @click="Logout" class="center">Logout</button>
+          <button v-if="authResult" @click="Logout" class="center">Logout</button>
         </div>
         <div class="post-list" v-for="post in posts" :key="post.id">
           <router-link :to="'/posts/' + post.id" class="post">
             <h3>{{ post.date }}</h3>
-            <p>{{ post.body }}</p>
+            <p class="post-body">{{ post.body }}</p>
           </router-link>
         </div>
-
       </div>
       <div class="sidebar">
       </div>
     </div>
     <div class="twoButtons">
       <div class="buttonsContainer">
-        <button v-if = "authResult" @click="Addpost" class="center">Add post</button>
-        <button v-if = "authResult" @click="DeleteAll" class="center">Delete all</button>
+        <button v-if="authResult" @click="Addpost" class="center">Add post</button>
+        <button v-if="authResult" @click="DeleteAll" class="center">Delete all</button>
       </div>
     </div>
   </div>
@@ -102,6 +101,11 @@ body{
   border-radius: 10px;
   margin-right: 5%;
   margin-left: 5%;
+}
+.post-body {
+  color: #333;
+  font-size: 1rem;
+  word-wrap: break-word;
 }
 h3{
   margin: 0;
@@ -186,6 +190,7 @@ div.sidebar{
   width: 20%;
   background-color: rgba(64, 145, 86, 0.5);
   border-radius: 25px;
+  min-height: 80vh;
 }
 
 .twoButtons {

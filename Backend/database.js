@@ -2,7 +2,7 @@ const Pool = require('pg').Pool;
 
 const pool = new Pool({
     user: "postgres",
-    password: "postgres", //add your password
+    password: "sql", //add your password postgres
     database: "testWad",
     host: "localhost",
     port: "5432"
@@ -19,7 +19,7 @@ const execute = async(query) => {
     }
 };
 
-/* 
+/*
 gen_random_uuid() A system function to generate a random Universally Unique IDentifier (UUID)
 An example of generated uuid:  32165102-4866-4d2d-b90c-7a2fddbb6bc8
 */

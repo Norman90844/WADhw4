@@ -2,9 +2,9 @@
   <div class="form">
     <h3>Add Post</h3>
     <label for="body">Body</label>
-    <input type="text" name="body" required v-model="body">
+    <input type="text" name="body" placeholder="body" required v-model="body">
     <div class="container">
-      <button @click="AddPost"  class="center">Add</button>
+      <button @click="AddPost" class="center">Add</button>
     </div>
   </div>
 </template>
@@ -47,45 +47,54 @@ export default {
   text-align: left;
   padding: 40px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 h3 {
   text-align: center;
-  color: rgb(8, 110, 110);
+  color: black;
+}
+.form-group {
+  display: flex; /* Add this line */
+  flex-direction: column; /* You can change this to 'row' if you want them side by side */
+  margin-bottom: 15px;
 }
 label {
-  color: rgb(8, 110, 110);
-  display: inline-block;
-  margin: 25px 0 15px;
+  color: black;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 input {
-  display: block;
   padding: 10px 6px;
   width: 100%;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid white;
-  color: blue;
+  color: black;
+  border-radius: 10px;
 }
 button {
   background: rgb(8, 110, 110);
   border: 0;
   padding: 10px 20px;
-  margin: 20px 20px 20px 20px;
   color: white;
   border-radius: 20px;
-  align-items: center;
-  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .center {
-  margin: auto;
   border: 0;
-  padding: 10px 20px;
-  margin-top: 20px;
-  width: 30%;
+}
+::placeholder {
+  text-align: center;
 }
 </style>
