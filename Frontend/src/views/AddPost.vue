@@ -25,7 +25,6 @@ export default {
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: 'include', //  Don't forget to specify this if you need cookies
           body: JSON.stringify(data),
         }).then((response) => response.json())
             .catch((e) => {

@@ -1,12 +1,13 @@
 <template>
   <div class="section">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <!--     <router-link to="/signup">SignUp</router-link> | -->
-      <!--     <router-link to="/login">LogIn</router-link> | -->
-      <router-link to="/contacts">Contacts</router-link>
-    </nav>
-    <router-view />
+    <div class="header">
+      <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/contacts">Contacts</router-link>
+      </nav>
+      <router-view />
+    </div>
+
   </div>
 
   <div class="footer">
@@ -35,12 +36,12 @@ nav {
   border-radius: 10px;
   padding-bottom: 10px;
   height: 50px;
-
 }
 
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  font-size: 22px;
 }
 
 nav a.router-link-exact-active {

@@ -17,6 +17,5 @@ export default {
 <style>
 .authors{
   padding: 10px;
-
 }
 </style>

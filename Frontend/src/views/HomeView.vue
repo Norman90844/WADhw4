@@ -101,12 +101,13 @@ body{
   border-radius: 10px;
   margin-right: 5%;
   margin-left: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .post-body {
   color: #333;
   font-size: 1rem;
   word-wrap: break-word;
-  padding-left: 3%;
 }
 h3{
   margin: 0;
