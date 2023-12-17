@@ -106,6 +106,7 @@ body{
   color: #333;
   font-size: 1rem;
   word-wrap: break-word;
+  padding-left: 3%;
 }
 h3{
   margin: 0;

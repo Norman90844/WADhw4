@@ -1,6 +1,11 @@
 <template>
   <div class="contacts">
-    <h1>This is a contact page</h1>
+    <h1>Authors</h1>
+    <div class="authors">
+      Marten Mathias Jaani<br>
+      Norman Tolmats<br>
+      Siim Maidla
+    </div>
   </div>
 </template>
 
@@ -9,3 +14,9 @@ export default {
   name: "ContactView",
 }
 </script>
+<style>
+.authors{
+  padding: 10px;
+
+}
+</style>

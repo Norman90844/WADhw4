@@ -11,7 +11,7 @@
 
   <div class="footer">
     <div>
-      Footer
+      ©
     </div>
   </div>
 </template>
@@ -26,7 +26,16 @@
 }
 
 nav {
-  padding: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+
 }
 
 nav a {
@@ -41,7 +50,7 @@ nav a.router-link-exact-active {
 .footer {
   display: flex;
   height: 50px;
-  background-color: grey;
+  background-color: lightgrey;
   text-align: center;
   align-items: center;
   justify-content: center;
